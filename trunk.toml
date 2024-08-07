@@ -1,0 +1,12 @@
+version = "0.1"
+
+[build]
+target = "wasm32-unknown-unknown"
+
+
+[serve]
+# The address to serve on LAN.
+address = "0.0.0.0"
+# The port to serve on.
+port = 8080
+
