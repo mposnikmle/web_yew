@@ -1,7 +1,8 @@
 version = "0.1"
 
 [build]
-target = "wasm32-unknown-unknown"
+target = "index.html"
+dist = "dist"
 
 
 [serve]
