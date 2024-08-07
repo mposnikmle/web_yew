@@ -3,6 +3,8 @@ version = "0.1"
 [build]
 target = "index.html"
 dist = "dist"
+# Disable lightningcss
+css_processor = "none"
 
 
 [serve]
