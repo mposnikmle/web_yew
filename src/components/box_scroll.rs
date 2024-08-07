@@ -37,7 +37,7 @@ pub fn box_scroll_component() -> Html {
         <div class={css!(r#"
             width: 100%;
             position: relative;
-            padding-top: 40px;
+            padding-top: 15px;
             padding-bottom: 20px;
             padding-right: 5px;
             padding-left: 5px;

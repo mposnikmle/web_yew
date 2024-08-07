@@ -17,6 +17,8 @@ pub fn home_page() -> Html {
     let header_height = 60; // Example height in pixels
 
     // Function to handle smooth scrolling
+    // Callback::from is a method from Yew
+
     let scroll_to_element = Callback::from(move |id: String| {
         if let Some(window) = window() {
             if let Some(document) = window.document() {
@@ -97,6 +99,7 @@ pub fn home_page() -> Html {
                 justify-content: center;
                 width: 95%;
                 margin: auto;
+                margin-bottom: 10px;
                 @media (max-width: 480px) {
 
                 }
@@ -126,7 +129,7 @@ pub fn home_page() -> Html {
                     display: flex;                    
                 }
             "#)}>
-                <img class={css!(r#"width: 80%; display: flex; align-items: center; 
+                <img class={css!(r#"width: 80%; display: flex; align-items: center; margin-bottom: 10px; 
                 @media (max-width: 480px) {
                     width: 100%;
                 }
@@ -134,7 +137,7 @@ pub fn home_page() -> Html {
                     width: 50%;
                 }"#)} src="/img/deuce01.png" alt=""/>
 
-                <img class={css!(r#"width: 80%; display: flex; align-items: center; 
+                <img class={css!(r#"width: 80%; display: flex; align-items: center; margin-bottom: 10px;
                 @media (max-width: 480px) {
                     width: 100%;
                 }
@@ -161,8 +164,7 @@ pub fn home_page() -> Html {
                 justify-content: center;
                 margin: auto;
                 width: 90%;
-                height: 90vh;
-                margin-top: 5vh;
+                height: 63vh;
                 margin-bottom: 5vh;
             "#)}>
                 <BoxScroll />
@@ -203,7 +205,14 @@ pub fn home_page() -> Html {
                 // scrolling id tag
                 <div id="video" class="scroll-target"></div>
 
-                <div class={css!(r#"@media (min-width: 481px) {
+                <div class={css!(r#"
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    margin-bottom: 15px;
+                    
+                    @media (min-width: 481px) {
                                 width: 50%;
                             }"#)}>
                     <Video />
@@ -218,8 +227,7 @@ pub fn home_page() -> Html {
                     <img src="/img/mazzulla02.png" alt="" 
                     class={css!(r#"
                             max-width: 100vw;
-                            top: 0;
-                            margin-top: 0px;
+                            margin-bottom: 25px;
 
                             @media (min-width: 481px) {
                                 width: 50%;
