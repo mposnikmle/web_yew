@@ -63,8 +63,8 @@ pub fn box_scroll_component() -> Html {
                         height: 90%;
                     }
                     @media (min-width: 780px) {
-                        width: 60%;
-                        height: 50%;
+                        width: 90%;
+                        height: 80%;
                     }
                 "#)}
             />

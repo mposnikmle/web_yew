@@ -96,6 +96,16 @@ const STYLES: &str = r#"
         border-collapse: collapse;
         font-family: "Arial", sans-serif;
         margin: auto;
+        @media (max-width: 480px) {
+            width: 50%;
+        }
+        @media (min-width: 481px) {
+            width: 75%;
+        }
+        @media (min-width: 780px) {
+            width: 90%;
+            height: 80%;
+        }
     }
 
     .stat-table th, .stat-table td {

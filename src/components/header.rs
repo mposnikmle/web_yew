@@ -135,12 +135,20 @@ pub fn header_component() -> Html {
                     display: flex;
                     justify-content: space-evenly;
                     font-weight: bold;
-                    font-size: 10pt;
+                    font-size: 12pt;
                     font-family: Arial, sans-serif;
                     margin: auto;
                     margin-top: 5px;
                     margin-bottom: 2px;
                     border-radius: 10px;
+                    @media (min-width: 800px) {
+                        font-size: 16pt;
+                        margin-bottom: 4px;
+                    }
+                    @media (min-width: 1200px) {
+                        font-size: 18pt;
+                        margin-bottom: 5px;
+                    }
                 "#)}>
                     <div class={classes!(button_base_class.clone(), get_button_class(ActiveSection::Main))} onclick={scroll_to_main}>
                         {"PLAYERS"}
